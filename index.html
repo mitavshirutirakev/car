@@ -817,7 +817,7 @@
     /* הגדרות למרכז את המכולה */
     .container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 תיבות בכל שורה */
+        grid-template-columns: repeat(3, 1fr); /* 3 תיבות בכל שורה */
         gap: 20px; /* רווח של 20px בין התיבות */
         justify-content: center; /* ממרכז את התוכן אופקית */
         padding: 20px;
@@ -861,6 +861,18 @@
         font-size: 28px;
         font-weight: bold;
         margin-bottom: 30px;
+    }
+
+    /* הסרת קווים תחתונים וגבולות מיותרים */
+    * {
+        border: none !important;
+        outline: none !important;
+        text-decoration: none !important;
+    }
+
+    /* הסרה של גבולות או קווים לא רצויים במובייל */
+    .container, .image-box-wrapper, .services-section h2 {
+        border: none !important;
     }
 </style>
 
@@ -924,6 +936,7 @@
         </div>
     </div>
 </div>
+
 
                         </div>
                     </div>
