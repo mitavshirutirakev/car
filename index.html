@@ -815,42 +815,132 @@
 </style>
 
 <div class="container">
-    <!-- Box 1 -->
-    <div class="image-box-wrapper">
-        <div class="icon">🚗</div>
-        <div class="image-box-content">
-            <h3 class="image-box-title">רכבים משומשים</h3>
-            <p class="image-box-description">קונים רכבים משומשים במצב טוב או גרוע ונותנים לכם את המחיר ההוגן ביותר.</p>
-        </div>
-    </div>
+<style>
+    .image-box-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 200px;
+        margin: 20px;
+    }
 
-    <!-- Box 2 -->
-    <div class="image-box-wrapper">
-        <div class="icon">🔒</div>
-        <div class="image-box-content">
-            <h3 class="image-box-title">רכבים משועבדים</h3>
-            <p class="image-box-description">הרכב שלכם משועבד? אצלנו תקבלו מחיר הוגן וסל פתרונות מותאם אישית.</p>
-        </div>
-    </div>
+    .image-box-content {
+        margin-top: 10px;
+    }
 
-    <!-- Box 3 -->
-    <div class="image-box-wrapper">
-        <div class="icon">🚘</div>
-        <div class="image-box-content">
-            <h3 class="image-box-title">רכבים לנסיעה</h3>
-            <p class="image-box-description">גם רכבים תקינים לנסיעה אנחנו קונים במחיר משתלם.</p>
-        </div>
-    </div>
+    .image-box-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
 
-    <!-- Box 4 -->
-    <div class="image-box-wrapper">
-        <div class="icon">🆕</div>
-        <div class="image-box-content">
-            <h3 class="image-box-title">רכבים חדשים/ישנים</h3>
-            <p class="image-box-description">לא משנה אם הרכב חדש או ישן – אנחנו נקנה אותו ממך!</p>
+    .image-box-description {
+        font-size: 16px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .icon {
+        font-size: 50px;
+        color: #4CAF50; /* ירוק */
+    }
+
+    .services-section {
+        text-align: right;
+        margin: 40px;
+    }
+
+    .services-section h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="services-section">
+    <h2>השירותים שלנו</h2>
+    <div class="container">
+        <!-- Box 1 -->
+        <div class="image-box-wrapper">
+            <div class="icon">🚗</div>
+            <div class="image-box-content">
+                <h3 class="image-box-title">רכבים משומשים</h3>
+                <p class="image-box-description">קונים רכבים משומשים במצב טוב או גרוע ונותנים לכם את המחיר ההוגן ביותר.</p>
+            </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="image-box-wrapper">
+            <div class="icon">🔒</div>
+            <div class="image-box-content">
+                <h3 class="image-box-title">רכבים משועבדים</h3>
+                <p class="image-box-description">הרכב שלכם משועבד? אצלנו תקבלו מחיר הוגן וסל פתרונות מותאם אישית.</p>
+            </div>
+        </div>
+
+        <!-- Box 3 -->
+        <div class="image-box-wrapper">
+            <div class="icon">🚘</div>
+            <div class="image-box-content">
+                <h3 class="image-box-title">רכבים לנסיעה</h3>
+                <p class="image-box-description">גם רכבים תקינים לנסיעה אנחנו קונים במחיר משתלם.</p>
+            </div>
+        </div>
+
+        <!-- Box 4 -->
+        <div class="image-box-wrapper">
+            <div class="icon">🆕</div>
+            <div class="image-box-content">
+                <h3 class="image-box-title">רכבים חדשים/ישנים</h3>
+                <p class="image-box-description">לא משנה אם הרכב חדש או ישן – אנחנו נקנה אותו ממך!</p>
+            </div>
+        </div>
+
+        <!-- Box 5 -->
+        <div class="image-box-wrapper">
+            <div class="icon">🔧</div>
+            <div class="image-box-content">
+                <h3 class="image-box-title">הכנה לטסט</h3>
+                <p class="image-box-description">הכנה מלאה לרכב לקראת הטסט השנתי בצורה המקצועית ביותר.</p>
+            </div>
+        </div>
+
+        <!-- Box 6 -->
+        <div class="image-box-wrapper">
+            <div class="icon">✨</div>
+            <div class="image-box-content">
+                <h3 class="image-box-title">פוליש ווקס</h3>
+                <p class="image-box-description">שירותי פוליש ווקס לרכב לקבלת ברק וניקיון מושלם.</p>
+            </div>
+        </div>
+
+        <!-- Box 7 -->
+        <div class="image-box-wrapper">
+            <div class="icon">🛠️</div>
+            <div class="image-box-content">
+                <h3 class="image-box-title">תיקון רכבים</h3>
+                <p class="image-box-description">שירותי תיקון מקצועיים לרכבים מכל הסוגים, כולל תיקונים דחופים.</p>
+            </div>
+        </div>
+
+        <!-- Box 8 -->
+        <div class="image-box-wrapper">
+            <div class="icon">🚿</div>
+            <div class="image-box-content">
+                <h3 class="image-box-title">ניקיון רכב</h3>
+                <p class="image-box-description">שירותי ניקיון מלאים לרכב בפנים ובחוץ לרכב מבריק ונקי.</p>
+            </div>
         </div>
     </div>
 </div>
+	    
 
                         </div>
                     </div>
