@@ -810,35 +810,37 @@
         color: #4CAF50; /* צבע ירוק */
     }
 
-    /* הגדרות למרכז את המכולה */
+    /* הגדרות לרוחב מלא */
     .container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 תיבות בכל שורה במחשב */
-        gap: 30px; /* רווח של 30px בין התיבות */
-        justify-content: center; /* ממרכז את התוכן אופקית */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
+        gap: 20px;
         padding: 20px;
-        max-width: 1200px;
+        width: 100%;
         margin: 0 auto; /* מרכז את המכולה */
     }
 
+    /* כל תיבה תקבל רוחב של 30% במחשב */
+    .container .image-box-wrapper {
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+
     /* התאמה למובייל */
-    @media (max-width: 1024px) {
-        .container {
-            grid-template-columns: repeat(2, 1fr); /* 2 תיבות בכל שורה במסכים בינוניים */
-        }
-    }
-
     @media (max-width: 768px) {
-        .container {
-            grid-template-columns: repeat(2, 1fr); /* תיבות בשורה זוגית במסכים קטנים */
-            justify-items: center; /* ממרכז את התיבות במובייל */
+        .container .image-box-wrapper {
+            flex-basis: 45%; /* 2 תיבות בכל שורה במסכים קטנים */
+            max-width: 45%;
         }
     }
 
+    /* התאמה למסכים מאוד קטנים */
     @media (max-width: 480px) {
-        .container {
-            grid-template-columns: repeat(1, 1fr); /* תיבה אחת בכל שורה במסכים קטנים מאוד */
+        .container .image-box-wrapper {
+            flex-basis: 100%; /* תיבה אחת בכל שורה במסכים קטנים מאוד */
+            max-width: 100%;
         }
     }
 
