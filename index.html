@@ -775,52 +775,83 @@
                                     .elementor-widget-image-box .elementor-image-box-description {
                                         margin: 0
                                     }
- </style>
-<div class="elementor-image-box-wrapper">
-    <figure class="elementor-image-box-img">
-        <img decoding="async" width="512" height="512" src="https://github.com/mitavshirutirakev/car/blob/main/images/car.png" class="attachment-full size-full" alt="רכבים משומשים" srcset="https://github.com/mitavshirutirakev/car/blob/main/images/car.png 512w, https://github.com/mitavshirutirakev/car/blob/main/images/car-300x300.png 300w, https://github.com/mitavshirutirakev/car/blob/main/images/car-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />
-    </figure>
-    <div class="elementor-image-box-content">
-        <h3 class="elementor-image-box-title">🚗 רכבים משומשים</h3>
-        <p class="elementor-image-box-description">אנחנו קונים רכבים משומשים 🛠️ – במצב טוב או גרוע, ונותנים לכם את המחיר ההוגן ביותר 💰.</p>
+<style>
+    .image-box-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        width: 200px;
+        margin: 20px;
+    }
+
+    .image-box-content {
+        margin-top: 10px;
+    }
+
+    .image-box-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .image-box-description {
+        font-size: 16px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .icon {
+        font-size: 50px;
+        color: #4CAF50; /* ירוק */
+    }
+</style>
+
+<div class="container">
+    <!-- Box 1 -->
+    <div class="image-box-wrapper">
+        <div class="icon">🚗</div>
+        <div class="image-box-content">
+            <h3 class="image-box-title">רכבים משומשים</h3>
+            <p class="image-box-description">קונים רכבים משומשים במצב טוב או גרוע ונותנים לכם את המחיר ההוגן ביותר.</p>
+        </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="image-box-wrapper">
+        <div class="icon">🔒</div>
+        <div class="image-box-content">
+            <h3 class="image-box-title">רכבים משועבדים</h3>
+            <p class="image-box-description">הרכב שלכם משועבד? אצלנו תקבלו מחיר הוגן וסל פתרונות מותאם אישית.</p>
+        </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="image-box-wrapper">
+        <div class="icon">🚘</div>
+        <div class="image-box-content">
+            <h3 class="image-box-title">רכבים לנסיעה</h3>
+            <p class="image-box-description">גם רכבים תקינים לנסיעה אנחנו קונים במחיר משתלם.</p>
+        </div>
+    </div>
+
+    <!-- Box 4 -->
+    <div class="image-box-wrapper">
+        <div class="icon">🆕</div>
+        <div class="image-box-content">
+            <h3 class="image-box-title">רכבים חדשים/ישנים</h3>
+            <p class="image-box-description">לא משנה אם הרכב חדש או ישן – אנחנו נקנה אותו ממך!</p>
+        </div>
     </div>
 </div>
 
-<!-- Image Box 2 -->
-<div class="elementor-image-box-wrapper">
-    <figure class="elementor-image-box-img">
-        <img decoding="async" width="512" height="512" src="https://github.com/mitavshirutirakev/car/blob/main/images/car2.png" class="attachment-full size-full" alt="רכבים משועבדים" srcset="https://github.com/mitavshirutirakev/car/blob/main/images/car2.png 512w, https://github.com/mitavshirutirakev/car/blob/main/images/car2-300x300.png 300w, https://github.com/mitavshirutirakev/car/blob/main/images/car2-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />
-    </figure>
-    <div class="elementor-image-box-content">
-        <h3 class="elementor-image-box-title">🔒 רכבים משועבדים</h3>
-        <p class="elementor-image-box-description">הרכב שלכם משועבד? אין בעיה! 💼 אצלנו תקבלו מחיר הוגן וסל פתרונות מותאם אישית 🚗.</p>
-    </div>
-</div>
-
-<!-- Image Box 3 -->
-<div class="elementor-image-box-wrapper">
-    <figure class="elementor-image-box-img">
-        <img decoding="async" width="512" height="512" src="https://github.com/mitavshirutirakev/car/blob/main/images/car3.png" class="attachment-full size-full" alt="רכבים לנסיעה" srcset="https://github.com/mitavshirutirakev/car/blob/main/images/car3.png 512w, https://github.com/mitavshirutirakev/car/blob/main/images/car3-300x300.png 300w, https://github.com/mitavshirutirakev/car/blob/main/images/car3-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />
-    </figure>
-    <div class="elementor-image-box-content">
-        <h3 class="elementor-image-box-title">🚘 רכבים לנסיעה</h3>
-        <p class="elementor-image-box-description">גם רכבים תקינים לנסיעה אנחנו קונים! 🏎️ הצטרפו למאות לקוחות מרוצים שכבר קיבלו את המחיר הטוב ביותר 📞.</p>
-    </div>
-</div>
-
-<!-- Image Box 4 -->
-<div class="elementor-image-box-wrapper">
-    <figure class="elementor-image-box-img">
-        <img decoding="async" width="512" height="512" src="https://github.com/mitavshirutirakev/car/blob/main/images/car4.png" class="attachment-full size-full" alt="רכבים חדשים/ישנים" srcset="https://github.com/mitavshirutirakev/car/blob/main/images/car4.png 512w, https://github.com/mitavshirutirakev/car/blob/main/images/car4-300x300.png 300w, https://github.com/mitavshirutirakev/car/blob/main/images/car4-150x150.png 150w" sizes="(max-width: 512px) 100vw, 512px" />
-    </figure>
-    <div class="elementor-image-box-content">
-        <h3 class="elementor-image-box-title">🆕 רכבים חדשים/ישנים</h3>
-        <p class="elementor-image-box-description">לא משנה אם הרכב חדש או ישן – אנחנו נקנה אותו ממך! ✨ קבלו תשלום מיידי 💵 והליך קל ופשוט.</p>
-    </div>
-</div>
-
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
