@@ -830,6 +830,19 @@
         .container {
             grid-template-columns: repeat(2, 1fr); /* 2 תיבות בכל שורה במסכים קטנים */
         }
+        .image-box-wrapper {
+            width: 100%; /* שיפר את הרוחב במסכים קטנים */
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            grid-template-columns: 1fr; /* תיבה אחת בכל שורה במסכים קטנים מאד */
+        }
+        .services-section h2 {
+            font-size: 24px; /* גודל כותרת קטן יותר במסכים קטנים */
+        }
     }
 
     /* טיפול בעיצוב כללי של הסעיף */
@@ -852,9 +865,7 @@
 </style>
 
 <div class="services-section">
-<center>
     <h2>השירותים שלנו</h2>
-</center>
     <div class="container">
         <!-- Box 1 -->
         <div class="image-box-wrapper">
@@ -913,7 +924,6 @@
         </div>
     </div>
 </div>
-
 
                         </div>
                     </div>
