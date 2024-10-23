@@ -776,11 +776,6 @@
                                         margin: 0
                                     }
 <style>
-    /* ביטול ההשפעה של elementor על מיקום התיבות */
-    .elementor-column {
-        width: 100% !important;
-    }
-
     /* עיצוב כללי לתיבות */
     .image-box-wrapper {
         display: flex;
@@ -788,11 +783,12 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        width: 220px;
         padding: 20px;
         background-color: #f8f9fa;
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        box-sizing: border-box;
     }
 
     /* עיצוב לכותרת */
@@ -817,31 +813,32 @@
     /* הגדרות למרכז את המכולה */
     .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 תיבות בכל שורה */
-        gap: 20px; /* רווח של 20px בין התיבות */
+        grid-template-columns: repeat(3, 1fr); /* 3 תיבות בכל שורה במחשב */
+        gap: 30px; /* רווח של 30px בין התיבות */
         justify-content: center; /* ממרכז את התוכן אופקית */
+        align-items: center;
         padding: 20px;
         max-width: 1200px;
         margin: 0 auto; /* מרכז את המכולה */
     }
 
     /* התאמה למובייל */
+    @media (max-width: 1024px) {
+        .container {
+            grid-template-columns: repeat(2, 1fr); /* 2 תיבות בכל שורה במסכים בינוניים */
+        }
+    }
+
     @media (max-width: 768px) {
         .container {
-            grid-template-columns: repeat(2, 1fr); /* 2 תיבות בכל שורה במסכים קטנים */
-        }
-        .image-box-wrapper {
-            width: 100%; /* שיפר את הרוחב במסכים קטנים */
-            padding: 15px;
+            grid-template-columns: repeat(2, 1fr); /* תיבות בשורה זוגית במסכים קטנים */
+            justify-items: center; /* ממרכז את התיבות במובייל */
         }
     }
 
     @media (max-width: 480px) {
         .container {
-            grid-template-columns: 1fr; /* תיבה אחת בכל שורה במסכים קטנים מאד */
-        }
-        .services-section h2 {
-            font-size: 24px; /* גודל כותרת קטן יותר במסכים קטנים */
+            grid-template-columns: repeat(1, 1fr); /* תיבה אחת בכל שורה במסכים קטנים מאוד */
         }
     }
 
@@ -849,30 +846,13 @@
     .services-section {
         text-align: center;
         padding: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh; /* מבטיח שהחלק יתפרס על כל גובה הדף */
     }
 
     /* כותרת הסעיף */
     .services-section h2 {
-        font-size: 28px;
+        font-size: 32px;
         font-weight: bold;
         margin-bottom: 30px;
-    }
-
-    /* הסרת קווים תחתונים וגבולות מיותרים */
-    * {
-        border: none !important;
-        outline: none !important;
-        text-decoration: none !important;
-    }
-
-    /* הסרה של גבולות או קווים לא רצויים במובייל */
-    .container, .image-box-wrapper, .services-section h2 {
-        border: none !important;
     }
 </style>
 
