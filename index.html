@@ -785,7 +785,6 @@
         text-align: center;
         width: 220px;
         padding: 20px;
-        margin: 20px;
         background-color: #f8f9fa;
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -812,23 +811,19 @@
 
     /* הגדרות למרכז את המכולה */
     .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 1200px; /* רוחב מקסימלי */
-        margin: 0 auto; /* ממרכז את המכולה */
-    }
-
-    /* טיפול בפריסת התיבות */
-    .container > div {
-        flex-basis: calc(25% - 40px); /* 4 תיבות בכל שורה */
-        margin: 20px; /* רווחים בין התיבות */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 תיבות בכל שורה */
+        gap: 20px; /* רווח של 20px בין התיבות */
+        justify-content: center; /* ממרכז את התוכן אופקית */
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto; /* מרכז את המכולה */
     }
 
     /* התאמה למובייל */
     @media (max-width: 768px) {
-        .container > div {
-            flex-basis: calc(50% - 40px); /* 2 תיבות בכל שורה במסכים קטנים */
+        .container {
+            grid-template-columns: repeat(2, 1fr); /* 2 תיבות בכל שורה במסכים קטנים */
         }
     }
 
